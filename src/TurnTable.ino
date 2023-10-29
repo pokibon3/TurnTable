@@ -103,7 +103,6 @@ void btnCheck()
         } else {
             angle = (360 - (angle - 90)) % 360;
             if (angle > 180) angle -= 360;
-            //if (angle != 0 && oldAngle != angle) {
             if (angle != 0) {
                 if (angle > 0) {
                     clockWise = FWD;
@@ -117,7 +116,6 @@ void btnCheck()
 
                 Serial.print("Angle: ");
                 Serial.println(angle);
-                //oldAngle = angle;
             }
         }
     }
