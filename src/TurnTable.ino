@@ -13,8 +13,8 @@
 #define FWD  1
 #define REW -1
 #define WAIT_TIME     300
-#define DEVICE_NAME   "Atante"
-#define INIT_SPEED      8
+#define DEVICE_NAME   "TANTE"
+#define INIT_SPEED      6
 // globals
 const int16_t NBSTEPS = 2048;   // for 28BYJ48  1/64 x 32 Steps
 int16_t dispTime   = DISP_TIME;
