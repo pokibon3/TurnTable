@@ -2,18 +2,32 @@
 // Ver1.0 2023.10.23 K.Ohe
 #include <Stepper.h>
 #include <DabbleESP32.h>
+#define KAWAZU
+// for kwazu version
+#ifdef KAWAZU
+    #define IN1  1
+    #define IN2  3
+    #define IN3  5
+    #define IN4  7
+#else
+// for ooe version
+    #define IN1  9
+    #define IN2  7
+    #define IN3  5
+    #define IN4  3
+#endif
 
-#define IN1  9
-#define IN2  7
-#define IN3  5
-#define IN4  3
 #define GRAPH_HEIGHT  240
 #define GRAPH_WIDTH   320
 #define DISP_TIME      10
 #define FWD  1
 #define REW -1
 #define WAIT_TIME     300
-#define DEVICE_NAME   "TANTE"
+#ifdef KAWAZU
+    #define DEVICE_NAME   "TANTE2"  // for kawazu version
+#else
+    #define DEVICE_NAME   "TANTE" // for ooe version
+#endif
 #define INIT_SPEED      6
 // globals
 const int16_t NBSTEPS = 2048;   // for 28BYJ48  1/64 x 32 Steps
