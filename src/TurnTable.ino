@@ -1,5 +1,6 @@
 // Turn Table Controller
-// Ver1.0 2023.10.23 K.Ohe
+// Ver 1.0 2023.10.23 K.Ohe First Release
+// Ver 1.1 2023.11.05 K.Ohe Support Kawazu PCB
 #include <Stepper.h>
 #include <DabbleESP32.h>
 #define KAWAZU
