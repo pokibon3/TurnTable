@@ -21,7 +21,7 @@
 #endif
 
 #ifdef ZEROCAL
-    #define ADC_PIN  		15
+    #define ADC_PIN  		 15
     #define ADC_ZERO 	    500
 #endif
 
